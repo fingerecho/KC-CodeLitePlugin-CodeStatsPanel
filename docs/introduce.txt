@@ -1,0 +1,13 @@
+##AST-based intelligent code statistics and quality dashboard
+##基于 AST 的智能代码统计与质量看板
+
+功能定位：在底部 Dock 面板做一个可视化的代码统计工具。支持统计项目内的代码行数、注释率、圈复杂度（粗略计算 if/for/while 数量），以及 TODO/FIXME 标记;
+这个插件可以不用完全手写解析器，而是调用 libclang 或者利用 clangd 返回的符号信息（Document Symbols），去遍历项目的结构。
+多线程开发：文件扫描必须放在后台线程，防止 CodeLite 主界面卡死;
+UI 线程通信：后台扫描完，如何安全地通过 wxQueueEvent 更新 UI（wxWidgets 的跨线程通信）；
+文件系统遍历：使用 wxDir 遍历工作区；
+
+提示词：
+这是一个基于CodeLite的插件项目，请完善项目工程代码实现一个基于 AST 的智能代码统计与质量看板，在底部 Dock 面板做一个可视化的代码统计工具。支持统计项目内的代码行数、注释率、圈复杂度（粗略计算 if/for/while 数量），以及 TODO/FIXME 标记。这个插件可以不用完全手写解析器，而是调用 libclang 或者利用 clangd 返回的符号信息（Document Symbols），去遍历项目的结构，多线程开发：文件扫描必须放在后台线程，防止 CodeLite 主界面卡死 ；UI 线程通信：后台扫描完，如何安全地通过 wxQueueEvent 更新 UI（wxWidgets 的跨线程通信）；文件系统遍历：使用 wxDir 遍历工作区；请完善这个fkc目录的代码实现之。
+
+

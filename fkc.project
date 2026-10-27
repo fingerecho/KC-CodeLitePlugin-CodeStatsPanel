@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="fkc" Version="11000">
+  <VirtualDirectory Name="src">
+    <File Name="fkc.cpp"/>
+    <File Name="code_stats.cpp"/>
+    <File Name="code_stats_panel.cpp"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="include">
+    <File Name="fkc.h"/>
+    <File Name="code_stats.h"/>
+    <File Name="code_stats_panel.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="CMake">
+    <File Name="CMakeLists.txt"/>
+  </VirtualDirectory>
+  <Dependencies/>
+  <Settings Type="Dynamic Library">
+    <GlobalSettings>
+      <Compiler Options="-std=c++20" C_Options="" Assembler="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Win_x64_Debug" CompilerType="D:\msys64\clang64\bin\clang++.exe" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g;-ID:/Temp/CodeLite_from_git/codelite/.build-release/Plugin/wxTerminalCtrl -ID:/Temp/CodeLite_from_git/codelite/submodules/wxTerminalEmulator/src/lib -ID:/Temp/CodeLite_from_git/codelite/submodules/assistant -ID:/Temp/CodeLite_from_git/codelite/Plugin -ID:/Temp/CodeLite_from_git/codelite/CodeLite -ID:/Temp/CodeLite_from_git/codelite/Plugin/aui -ID:/Temp/CodeLite_from_git/codelite/Interfaces -ID:/Temp/CodeLite_from_git/codelite/.build-release/wxWidgets-install/lib/clang_x64_dll/mswu -ID:/Temp/CodeLite_from_git/codelite/.build-release/wxWidgets-install/include -Wno-ignored-attributes -Wno-unknown-pragmas -Wno-unused-private-field -D_FILE_OFFSET_BITS=64 -DWXUSINGDLL -D__WXMSW__ -DHAVE_W32API_H -D_UNICODE -fmessage-length=0 -pipe -DwxDEBUG_LEVEL=0" C_Options="-g;$(shell wx-config --cxxflags)" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+        <IncludePath Value="..\CodeLite_from_git\codelite\.build-release\install/Interfaces"/>
+        <IncludePath Value="..\CodeLite_from_git\codelite\.build-release\install/CodeLite"/>
+        <IncludePath Value="..\CodeLite_from_git\codelite\.build-release\install/Plugin"/>
+        <IncludePath Value="..\CodeLite_from_git\codelite\.build-release\install/sdk/wxsqlite3/include"/>
+        <Preprocessor Value="__WX__"/>
+        <Preprocessor Value="WXUSINGDLL"/>
+        <Preprocessor Value="WXUSINGDLL_WXSQLITE3"/>
+        <Preprocessor Value="WXUSINGDLL_SDK"/>
+        <Preprocessor Value="WXUSINGDLL_CL"/>
+        <Preprocessor Value="YY_NEVER_INTERACTIVE=1"/>
+      </Compiler>
+      <Linker Options="-LD:/Temp/CodeLite_from_git/codelite/.build-release/wxWidgets-install/lib/clang_x64_dll -pipe -lwxmsw33u" Required="yes">
+        <LibraryPath Value="../lib/gcc_lib"/>
+        <LibraryPath Value="D:/Temp/CodeLite_from_git/codelite/.build-release/lib"/>
+        <Library Value="libplugin.dll"/>
+        <Library Value="libcodelite.dll"/>
+        <Library Value="libwxsqlite3.dll"/>
+      </Linker>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/fkc.dll" IntermediateDirectory="$(ConfigurationName)" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="./DebugUnicode" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild>
+        <Command Enabled="yes">cp "$(IntermediateDirectory)\fkc.dll" D:/Temp/CodeLite_from_git/codelite/.build-release/bin/plugins</Command>
+      </PostBuild>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName/>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Win_x64_Release" CompilerType="D:\msys64\clang64\bin\clang++.exe" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-ID:/Temp/CodeLite_from_git/codelite/.build-release/Plugin/wxTerminalCtrl -ID:/Temp/CodeLite_from_git/codelite/submodules/wxTerminalEmulator/src/lib -ID:/Temp/CodeLite_from_git/codelite/submodules/assistant -ID:/Temp/CodeLite_from_git/codelite/Plugin -ID:/Temp/CodeLite_from_git/codelite/CodeLite -ID:/Temp/CodeLite_from_git/codelite/Plugin/aui -ID:/Temp/CodeLite_from_git/codelite/Interfaces -ID:/Temp/CodeLite_from_git/codelite/.build-release/wxWidgets-install/lib/clang_x64_dll/mswu -ID:/Temp/CodeLite_from_git/codelite/.build-release/wxWidgets-install/include -Wno-ignored-attributes -Wno-unknown-pragmas -Wno-unused-private-field -D_FILE_OFFSET_BITS=64 -DWXUSINGDLL -D__WXMSW__ -DHAVE_W32API_H -D_UNICODE -O2 -DwxDEBUG_LEVEL=0" C_Options="$(shell wx-config --cxxflags --debug=no ); -O2" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+        <IncludePath Value="..\CodeLite_from_git\codelite\.build-release\install/Interfaces"/>
+        <IncludePath Value="..\CodeLite_from_git\codelite\.build-release\install/CodeLite"/>
+        <IncludePath Value="..\CodeLite_from_git\codelite\.build-release\install/Plugin"/>
+        <IncludePath Value="..\CodeLite_from_git\codelite\.build-release\install/sdk/wxsqlite3/include"/>
+        <Preprocessor Value="__WX__"/>
+        <Preprocessor Value="WXUSINGDLL"/>
+        <Preprocessor Value="WXUSINGDLL_WXSQLITE3"/>
+        <Preprocessor Value="WXUSINGDLL_SDK"/>
+        <Preprocessor Value="WXUSINGDLL_CL"/>
+        <Preprocessor Value="YY_NEVER_INTERACTIVE=1"/>
+      </Compiler>
+      <Linker Options="-O2;-LD:/Temp/CodeLite_from_git/codelite/.build-release/wxWidgets-install/lib/clang_x64_dll -pipe -lwxmsw33u;-s" Required="yes">
+        <LibraryPath Value="../lib/gcc_lib"/>
+        <LibraryPath Value="D:/Temp/CodeLite_from_git/codelite/.build-release/lib"/>
+        <Library Value="libplugin.dll"/>
+        <Library Value="libcodelite.dll"/>
+        <Library Value="libwxsqlite3.dll"/>
+      </Linker>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/fkc.dll" IntermediateDirectory="$(ConfigurationName)" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="./ReleaseUnicode" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild>
+        <Command Enabled="yes">cp "$(IntermediateDirectory)\fkc.dll" D:/Temp/CodeLite_from_git/codelite/.build-release/install/lib/codelite</Command>
+      </PostBuild>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName/>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+  <Dependencies Name="Win_x64_Debug"/>
+  <Dependencies Name="Win_x64_Release"/>
+</CodeLite_Project>
