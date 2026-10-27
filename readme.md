@@ -1,5 +1,7 @@
 #KC-CodeLitePlugin-CodeStatsPanel
+
 #AST-based intelligent code statistics and quality dashboard 
+
 #CodeLite 插件：基于 AST 的智能代码统计与质量看板
 
 功能定位：在底部 Dock 面板做一个可视化的代码统计工具。支持统计项目内的代码行数、注释率、圈复杂度（粗略计算 if/for/while 数量），以及 TODO/FIXME 标记;
